@@ -1,4 +1,4 @@
-namespace AcademiX.Models
+namespace AcademiX.Models.ViewModels
 {
     public class ErrorViewModel
     {

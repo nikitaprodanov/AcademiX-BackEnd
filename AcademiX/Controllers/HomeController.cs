@@ -1,4 +1,5 @@
 ﻿using AcademiX.Models;
+using AcademiX.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

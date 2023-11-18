@@ -1,7 +1,22 @@
+using AcademiX.Helpers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSession(options =>
+{
+    // With IdleTimeout you can change the number of seconds after which the session expires.
+    // The seconds reset every time you access the session.
+    // This only applies to the session, not the cookie.
+    options.IdleTimeout = TimeSpan.FromSeconds(3600);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+// Helpers 
+builder.Services.AddTransient<ModelMapper>();
 
 var app = builder.Build();
 
@@ -15,6 +30,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
