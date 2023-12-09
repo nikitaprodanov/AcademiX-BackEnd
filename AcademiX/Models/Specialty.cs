@@ -1,9 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace AcademiX.Models
 {
     public class Specialty
     {
+        [Key]
+        [Required]
         public int Id { get; set; }
+
+        [Required]
+        [StringLength(100)]
         public string Name { get; set; }
+
+        [StringLength(100)]
         public string Description { get; set; }
         public Specialty() {
             Id = -1;
@@ -18,7 +27,7 @@ namespace AcademiX.Models
             Description = string.Empty;
         }
 
-        public Specialty(int id, string name, string description) : this(id)
+        public Specialty(int id, string name, string description = "") : this(id)
         {
             Name = name;
             Description = description;
