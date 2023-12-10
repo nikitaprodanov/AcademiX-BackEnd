@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\konst\\source\\repos\\AcademiX\\AcademiX\\AcademiX.csproj": {}
+    "C:\\Users\\zhnin\\Documents\\GitHub\\AcademiX-BackEnd\\AcademiX\\AcademiX.csproj": {}
   },
   "projects": {
-    "C:\\Users\\konst\\source\\repos\\AcademiX\\AcademiX\\AcademiX.csproj": {
+    "C:\\Users\\zhnin\\Documents\\GitHub\\AcademiX-BackEnd\\AcademiX\\AcademiX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\konst\\source\\repos\\AcademiX\\AcademiX\\AcademiX.csproj",
+        "projectUniqueName": "C:\\Users\\zhnin\\Documents\\GitHub\\AcademiX-BackEnd\\AcademiX\\AcademiX.csproj",
         "projectName": "AcademiX",
-        "projectPath": "C:\\Users\\konst\\source\\repos\\AcademiX\\AcademiX\\AcademiX.csproj",
-        "packagesPath": "C:\\Users\\konst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\konst\\source\\repos\\AcademiX\\AcademiX\\obj\\",
+        "projectPath": "C:\\Users\\zhnin\\Documents\\GitHub\\AcademiX-BackEnd\\AcademiX\\AcademiX.csproj",
+        "packagesPath": "C:\\Users\\zhnin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zhnin\\Documents\\GitHub\\AcademiX-BackEnd\\AcademiX\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\konst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zhnin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
