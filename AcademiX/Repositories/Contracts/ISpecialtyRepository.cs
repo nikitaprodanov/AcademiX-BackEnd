@@ -12,7 +12,7 @@ namespace AcademiX.Repositories.Contracts
 
         public void CreateSpecialty(Specialty specialty);
 
-        public int UpdateSpecialty(Specialty specialty);
+        public int UpdateSpecialty(Specialty SpecialtyToChange, Specialty specialty);
 
         public int DeleteSpecialty(int id);
     }

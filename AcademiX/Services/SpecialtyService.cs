@@ -1,7 +1,10 @@
-﻿using AcademiX.Models;
+﻿using AcademiX.Exceptions;
+using AcademiX.Models;
 using AcademiX.Repositories;
 using AcademiX.Repositories.Contracts;
 using AcademiX.Services.Contracts;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace AcademiX.Services
 {
@@ -21,7 +24,15 @@ namespace AcademiX.Services
 
         public Specialty GetSpecialtyById(int id)
         {
-            return _repository.GetSpecialtyById(id);
+            try
+            {
+                return _repository.GetSpecialtyById(id);
+            }
+            catch (EntityNotFoundException)
+            {
+                throw new EntityNotFoundException("Specialty with this id was not found.");
+
+            }
         }
 
         public Specialty GetSpecialtyByName(string name)
@@ -31,17 +42,68 @@ namespace AcademiX.Services
 
         public void CreateSpecialty(Specialty specialty)
         {
-             _repository.CreateSpecialty(specialty);
+            try
+            {                             
+                var id = _repository.GetAllSpecialties()
+                    .OrderByDescending(sp => sp.Id)
+                    .Select(sp => sp.Id)
+                    .FirstOrDefault();
+
+                specialty.Id = ++id;
+
+                if (_repository.GetSpecialtyByName(specialty.Name) != null)
+                {
+                    throw new DuplicateEntityException();
+                }
+
+                _repository.CreateSpecialty(specialty);
+            }
+            catch (DuplicateEntityException)
+            {
+                throw new DuplicateEntityException("Specialty with this name is already created.");
+            }
+            
         }
 
         public int UpdateSpecialty(Specialty specialty)
         {
-            return _repository.UpdateSpecialty(specialty);
+            try
+            {
+
+                var specialtyToChange = _repository.GetSpecialtyById(specialty.Id);
+
+                if (_repository.GetSpecialtyByName(specialty.Name) != null)
+                {
+                    throw new DuplicateEntityException();
+                }              
+
+                return _repository.UpdateSpecialty(specialtyToChange,specialty);
+               
+            }
+            catch (EntityNotFoundException)
+            {
+                throw new EntityNotFoundException("Specialty with this id was not found.");
+
+            }
+            catch (DuplicateEntityException)
+            {
+                throw new DuplicateEntityException("Specialty with this name is already created.");
+            }           
         }
 
         public int DeleteSpecialty(int id)
         {
-            return _repository.DeleteSpecialty(id);
+            try
+            {
+                _repository.GetSpecialtyById(id);
+
+                return _repository.DeleteSpecialty(id);
+            }
+
+            catch (EntityNotFoundException)
+            {
+                throw new EntityNotFoundException();
+            }
         }
         
     }

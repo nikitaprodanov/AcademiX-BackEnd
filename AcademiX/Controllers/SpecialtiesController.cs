@@ -34,17 +34,6 @@ namespace AcademiX.Controllers
             return specialty;
         }
 
-        public ActionResult<Specialty> GetSpecialtyByName(string name)
-        {
-            var specialty = _specialtyService.GetSpecialtyByName(name);
-            if (specialty == null)
-            {
-                return BadRequest();
-            }
-
-            return specialty;
-        }
-
         public ActionResult<Specialty> CreateSpecialty(Specialty specialty)
         {
             _specialtyService.CreateSpecialty(specialty);
@@ -73,13 +62,6 @@ namespace AcademiX.Controllers
 
         public ActionResult DeleteSpecialty(int id)
         {
-            ActionResult<Specialty> specialty = GetSpecialtyById(id);
-
-            if(specialty.Value == null)
-            {
-                return BadRequest();
-            }
-
             var success = _specialtyService.DeleteSpecialty(id);
 
             if (success != 0)
@@ -96,6 +78,10 @@ namespace AcademiX.Controllers
         {
             return View();
         }
+
+
+
+
 
 
 
@@ -126,6 +112,19 @@ namespace AcademiX.Controllers
         //    specialty.Description = description;
 
         //    return UpdateSpecialty(specialty);
+        //}
+
+
+        //No need for now
+        //public ActionResult<Specialty> GetSpecialtyByName(string name)
+        //{
+        //    var specialty = _specialtyService.GetSpecialtyByName(name);
+        //    if (specialty == null)
+        //    {
+        //        return BadRequest();
+        //    }
+
+        //    return specialty;
         //}
     }
 }

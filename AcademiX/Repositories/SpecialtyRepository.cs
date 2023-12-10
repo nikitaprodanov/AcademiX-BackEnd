@@ -1,6 +1,8 @@
 ﻿using AcademiX.Data;
+using AcademiX.Exceptions;
 using AcademiX.Models;
 using AcademiX.Repositories.Contracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace AcademiX.Repositories
 {
@@ -21,7 +23,7 @@ namespace AcademiX.Repositories
 
         public Specialty GetSpecialtyById(int id)
         {
-            return _context.Specialties.Find(id);
+            return _context.Specialties.Find(id) ?? throw new EntityNotFoundException();
         }
 
         public Specialty GetSpecialtyByName(string name)
@@ -35,9 +37,9 @@ namespace AcademiX.Repositories
             _context.SaveChanges();
         }
 
-        public int UpdateSpecialty(Specialty specialty)
+        public int UpdateSpecialty(Specialty specialtyToChange, Specialty specialty)
         {
-            _context.Specialties.Update(specialty);
+            _context.Entry(specialtyToChange).CurrentValues.SetValues(specialty);
             var success = _context.SaveChanges();
             return success;
         }
