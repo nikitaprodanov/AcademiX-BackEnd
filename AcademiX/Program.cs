@@ -1,5 +1,9 @@
 using AcademiX.Data;
 using AcademiX.Helpers;
+using AcademiX.Repositories;
+using AcademiX.Repositories.Contracts;
+using AcademiX.Services;
+using AcademiX.Services.Contracts;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +20,13 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+
+//Services
+builder.Services.AddScoped<ISpecialtyService, SpecialtyService>();
+
+//Repositories
+builder.Services.AddScoped<ISpecialtyRepository, SpecialtyRepository>();
 
 // Helpers 
 builder.Services.AddTransient<ModelMapper>();
