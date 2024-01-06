@@ -13,5 +13,6 @@ namespace AcademiX.Data
         /* Add other Database tables as models are made*/ 
         public DbSet<User> Users { get; set; }
         public DbSet<Specialty> Specialties { get; set; }
+        public DbSet<Reviewer> Reviewers { get; set; }
     }
 }

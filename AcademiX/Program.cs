@@ -24,9 +24,13 @@ builder.Services.AddSession(options =>
 
 //Services
 builder.Services.AddScoped<ISpecialtyService, SpecialtyService>();
+builder.Services.AddScoped<IReviewerService, ReviewerService>();
+
 
 //Repositories
 builder.Services.AddScoped<ISpecialtyRepository, SpecialtyRepository>();
+builder.Services.AddScoped<IReviewerRepository, ReviewerRepository>();
+
 
 // Helpers 
 builder.Services.AddTransient<ModelMapper>();
