@@ -163,6 +163,7 @@ namespace AcademiX.Migrations
             modelBuilder.Entity("AcademiX.Models.ThesisSupervisor", b =>
                 {
                     b.Navigation("ThesisSupervisorsSpecialties");
+                });
 
             modelBuilder.Entity("AcademiX.Models.Reviewer", b =>
                 {
