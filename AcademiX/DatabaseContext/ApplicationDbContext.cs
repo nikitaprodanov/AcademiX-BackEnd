@@ -14,5 +14,13 @@ namespace AcademiX.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Specialty> Specialties { get; set; }
         public DbSet<Reviewer> Reviewers { get; set; }
-    }
+		public DbSet<ThesisSupervisor> ThesisSupervisors { get; set; }
+		public DbSet<ThesisSupervisorsSpecialties> ThesisSupervisorsSpecialties { get; set; }
+
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			modelBuilder.Entity<ThesisSupervisorsSpecialties>()
+				.HasKey(t => new { t.ThesisSupervisorId, t.SpecialtyId });
+		}
+	}
 }

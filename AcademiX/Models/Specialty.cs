@@ -32,5 +32,7 @@ namespace AcademiX.Models
             Name = name;
             Description = description;
         }
-    }
+
+		public ICollection<ThesisSupervisorsSpecialties> ThesisSupervisorsSpecialties { get; set; }
+	}
 }

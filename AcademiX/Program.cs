@@ -31,12 +31,12 @@ builder.Services.AddSwaggerGen(c =>
 //Services
 builder.Services.AddScoped<ISpecialtyService, SpecialtyService>();
 builder.Services.AddScoped<IReviewerService, ReviewerService>();
-
+builder.Services.AddScoped<IThesisSupervisorService, ThesisSupervisorService>();
 
 //Repositories
 builder.Services.AddScoped<ISpecialtyRepository, SpecialtyRepository>();
 builder.Services.AddScoped<IReviewerRepository, ReviewerRepository>();
-
+builder.Services.AddScoped<IThesisSupervisorRepository, ThesisSupervisorRepository>();
 
 // Helpers 
 builder.Services.AddTransient<ModelMapper>();
