@@ -26,7 +26,10 @@ namespace AcademiX.Repositories
 
         public Reviewer GetReviewerById(int id)
         {
-            return _context.Reviewers.Find(id) ?? throw new EntityNotFoundException();
+            return _context.Reviewers
+                .Include(reviewer => reviewer.User)
+                .Where(reviewer => reviewer.Id == id)
+                .FirstOrDefault() ?? throw new EntityNotFoundException();
         }
 
         public void CreateReviewer(Reviewer Reviewer)
