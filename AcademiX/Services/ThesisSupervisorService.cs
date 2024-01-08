@@ -68,16 +68,16 @@ namespace AcademiX.Services
 		}
 
 		// GetBySpecialtyId
-		public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyId(int specialtyId)
-		{
-			return _repository.GetThesisSupervisorsBySpecialtyId(specialtyId);
-		}
+		//public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyId(int specialtyId)
+		//{
+		//	return _repository.GetThesisSupervisorsBySpecialtyId(specialtyId);
+		//}
 
-		// GetBySpecialtyName
-		public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyName(string specialtyName)
-		{
-			return _repository.GetThesisSupervisorsBySpecialtyName(specialtyName);
-		}
+		//// GetBySpecialtyName
+		//public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyName(string specialtyName)
+		//{
+		//	return _repository.GetThesisSupervisorsBySpecialtyName(specialtyName);
+		//}
 
 		public int DeleteThesisSupervisor(int id)
 		{

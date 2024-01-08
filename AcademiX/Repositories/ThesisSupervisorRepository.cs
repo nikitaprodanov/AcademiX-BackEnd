@@ -23,8 +23,10 @@ namespace AcademiX.Repositories
 
 		public IEnumerable<ThesisSupervisor> GetAllThesisSupervisors()
 		{
-			return _context.ThesisSupervisors.ToList();
-		}
+			return _context.ThesisSupervisors
+                .Include(ts => ts.User)
+                .ToList();
+        }
 
 		public ThesisSupervisor GetThesisSupervisorById(int id)
 		{
@@ -50,20 +52,20 @@ namespace AcademiX.Repositories
 			var success = _context.SaveChanges();
 			return success;
 		}
-		public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyId(int specialtyId)
-		{
-			return _context.ThesisSupervisors
-				.Where(ts => ts.ThesisSupervisorsSpecialties
-					.Any(tss => tss.SpecialtyId == specialtyId))
-				.ToList();
-		}
+		//public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyId(int specialtyId)
+		//{
+		//	return _context.ThesisSupervisors
+		//		.Where(ts => ts.ThesisSupervisorsSpecialties
+		//			.Any(tss => tss.SpecialtyId == specialtyId))
+		//		.ToList();
+		//}
 
-		public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyName(string specialtyName)
-		{
-			return _context.ThesisSupervisors
-				.Where(ts => ts.ThesisSupervisorsSpecialties
-					.Any(tss => tss.Specialty.Name == specialtyName))
-				.ToList();
-		}
+		//public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyName(string specialtyName)
+		//{
+		//	return _context.ThesisSupervisors
+		//		.Where(ts => ts.ThesisSupervisorsSpecialties
+		//			.Any(tss => tss.Specialty.Name == specialtyName))
+		//		.ToList();
+		//}
 	}
 }

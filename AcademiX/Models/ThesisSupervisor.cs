@@ -16,9 +16,10 @@ namespace AcademiX.Models
 		public bool IsReviewer { get; set; }
 
 		[Required]
-		[ForeignKey("User")]
 		public int UserId { get; set; }
 
-		public ICollection<ThesisSupervisorsSpecialties> ThesisSupervisorsSpecialties { get; set; }
+		public User User { get; set; }
+
+		public ICollection<Specialty> Specialties { get; set; }
 	}
 }

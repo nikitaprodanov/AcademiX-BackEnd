@@ -41,21 +41,21 @@ namespace AcademiX.Controllers.API
 			}
 		}
 
-		[HttpGet("byspecialty/{specialtyId}")]
-		public IActionResult GetThesisSupervisorsBySpecialtyId(int specialtyId)
-		{
-			var thesisSupervisor = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyId(specialtyId);
+		//[HttpGet("{specialtyId}")]
+		//public IActionResult GetThesisSupervisorsBySpecialtyId(int specialtyId)
+		//{
+		//	var thesisSupervisor = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyId(specialtyId);
 
-			return this.StatusCode(StatusCodes.Status200OK, thesisSupervisor);
-		}
+		//	return this.StatusCode(StatusCodes.Status200OK, thesisSupervisor);
+		//}
 
-		[HttpGet("byspecialty/{specialtyName}")]
-		public IActionResult GetThesisSupervisorsBySpecialtyName(string specialtyName)
-		{
-			var thesisSupervisor = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyName(specialtyName);
+		//[HttpGet("{specialtyName}")]
+		//public IActionResult GetThesisSupervisorsBySpecialtyName(string specialtyName)
+		//{
+		//	var thesisSupervisor = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyName(specialtyName);
 
-			return this.StatusCode(StatusCodes.Status200OK, thesisSupervisor);
-		}
+		//	return this.StatusCode(StatusCodes.Status200OK, thesisSupervisor);
+		//}
 
 
 		[HttpPost("")]

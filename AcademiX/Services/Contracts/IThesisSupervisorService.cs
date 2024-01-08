@@ -21,10 +21,10 @@ namespace AcademiX.Services.Contracts
 		// Delete
 		public int DeleteThesisSupervisor(int id);
 
-		// GetBySpecialtyId
-		public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyId(int specialtyId);
+		//// GetBySpecialtyId
+		//public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyId(int specialtyId);
 
-		// GetBySpecialtyName
-		public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyName(string specialtyName);
+		//// GetBySpecialtyName
+		//public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyName(string specialtyName);
 	}
 }

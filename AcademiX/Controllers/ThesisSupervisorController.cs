@@ -32,19 +32,19 @@ namespace AcademiX.Controllers
 			return thesisSupervisor;
 		}
 
-		public ActionResult<IEnumerable<ThesisSupervisor>> GetThesisSupervisorsBySpecialtyId(int specialtyId)
-		{
-			var thesisSupervisors = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyId(specialtyId);
+		//public ActionResult<IEnumerable<ThesisSupervisor>> GetThesisSupervisorsBySpecialtyId(int specialtyId)
+		//{
+		//	var thesisSupervisors = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyId(specialtyId);
 
-			return View(thesisSupervisors);
-		}
+		//	return View(thesisSupervisors);
+		//}
 
-		public ActionResult<IEnumerable<ThesisSupervisor>> GetThesisSupervisorsBySpecialtyName(string specialtyName)
-		{
-			var thesisSupervisors = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyName(specialtyName);
+		//public ActionResult<IEnumerable<ThesisSupervisor>> GetThesisSupervisorsBySpecialtyName(string specialtyName)
+		//{
+		//	var thesisSupervisors = _thesisSupervisorService.GetThesisSupervisorsBySpecialtyName(specialtyName);
 
-			return View(thesisSupervisors);
-		}
+		//	return View(thesisSupervisors);
+		//}
 
 		public ActionResult<ThesisSupervisor> CreateThesisSupervisor(ThesisSupervisor thesisSupervisor)
 		{
