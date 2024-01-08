@@ -103,6 +103,7 @@ namespace AspNetCoreDemo.Controllers.Api
         }
 
 
+        [NonAction]
         public Reviewer Convert(ReviewerDto dto)
         {
             return new Reviewer()

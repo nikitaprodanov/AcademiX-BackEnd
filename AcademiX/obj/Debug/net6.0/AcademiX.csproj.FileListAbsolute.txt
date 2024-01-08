@@ -63,3 +63,8 @@ C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\refin
 C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.pdb
 C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.genruntimeconfig.cache
 C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\ref\AcademiX.dll
+C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.MvcApplicationPartsAssemblyInfo.cs
