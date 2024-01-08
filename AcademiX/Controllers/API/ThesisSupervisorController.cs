@@ -74,7 +74,6 @@ namespace AcademiX.Controllers.API
 			}
 		}
 
-
 		[HttpPut("")]
 		public IActionResult UpdateThesisSupervisor([FromBody] ThesisSupervisor thesisSupervisor)
 		{

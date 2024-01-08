@@ -61,9 +61,9 @@ namespace AcademiX.Repositories
 		public IEnumerable<ThesisSupervisor> GetThesisSupervisorsBySpecialtyName(string specialtyName)
 		{
 			return _context.ThesisSupervisors
-			.Where(ts => ts.ThesisSupervisorsSpecialties
-				.Any(tss => tss.Specialty.Name == specialtyName))
-			.ToList();
+				.Where(ts => ts.ThesisSupervisorsSpecialties
+					.Any(tss => tss.Specialty.Name == specialtyName))
+				.ToList();
 		}
 	}
 }
