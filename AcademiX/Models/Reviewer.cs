@@ -14,9 +14,10 @@ namespace AcademiX.Models
         [StringLength(7)]
         public string WorkingTime { get; set; }
 
-        [Required]
-        [ForeignKey("User")]
         public int UserId { get; set; }
+
+        public User User { get; set; }
+
 
     }
 }

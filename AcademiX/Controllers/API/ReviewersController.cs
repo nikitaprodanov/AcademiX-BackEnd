@@ -1,5 +1,6 @@
 ﻿using AcademiX.Exceptions;
 using AcademiX.Models;
+using AcademiX.Models.DTO;
 using AcademiX.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,13 +42,14 @@ namespace AspNetCoreDemo.Controllers.Api
         }
 
         [HttpPost("")]
-        public ActionResult<Reviewer> CreateReviewer(Reviewer Reviewer)
+        public ActionResult<Reviewer> CreateReviewer(ReviewerDto reviewerDto)
         {
             try
             {
-                _reviewerService.CreateReviewer(Reviewer);
+                Reviewer reviewer = Convert(reviewerDto);
+                _reviewerService.CreateReviewer(reviewer);
 
-                return this.StatusCode(StatusCodes.Status201Created, Reviewer);
+                return this.StatusCode(StatusCodes.Status201Created, reviewer);
             }
 
             catch (DuplicateEntityException ex)
@@ -57,11 +59,12 @@ namespace AspNetCoreDemo.Controllers.Api
         }
 
         [HttpPut("")]
-        public IActionResult UpdateReviewer([FromBody] Reviewer Reviewer)
+        public IActionResult UpdateReviewer([FromBody] ReviewerDto reviewerDto)
         {
             try
             {
-                var success = _reviewerService.UpdateReviewer(Reviewer);
+                Reviewer reviewer = Convert(reviewerDto);
+                var success = _reviewerService.UpdateReviewer(reviewer);
 
                 if (success != 0)
                 {
@@ -97,6 +100,19 @@ namespace AspNetCoreDemo.Controllers.Api
             {
                 return BadRequest();
             }
+        }
+
+
+        [NonAction]
+        public Reviewer Convert(ReviewerDto dto)
+        {
+            return new Reviewer()
+            {
+                Id = dto.Id,
+                Cabinet = dto.Cabinet,
+                WorkingTime = dto.WorkingTime,
+                UserId = dto.UserId
+            };
         }
     }
 }

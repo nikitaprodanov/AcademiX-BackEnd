@@ -1,7 +1,9 @@
 ﻿using AcademiX.Data;
 using AcademiX.Exceptions;
+using AcademiX.Migrations;
 using AcademiX.Models;
 using AcademiX.Repositories.Contracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace AcademiX.Repositories
 {
@@ -17,12 +19,17 @@ namespace AcademiX.Repositories
 
         public IEnumerable<Reviewer> GetAllReviewers()
         {
-            return _context.Reviewers.ToList();
+            return _context.Reviewers
+                .Include(reviewer => reviewer.User)
+                .ToList();
         }
 
         public Reviewer GetReviewerById(int id)
         {
-            return _context.Reviewers.Find(id) ?? throw new EntityNotFoundException();
+            return _context.Reviewers
+                .Include(reviewer => reviewer.User)
+                .Where(reviewer => reviewer.Id == id)
+                .FirstOrDefault() ?? throw new EntityNotFoundException();
         }
 
         public void CreateReviewer(Reviewer Reviewer)
@@ -31,9 +38,9 @@ namespace AcademiX.Repositories
             _context.SaveChanges();
         }
 
-        public int UpdateReviewer(Reviewer reviewerToChange, Reviewer Reviewer)
+        public int UpdateReviewer(Reviewer reviewerToChange, Reviewer reviewer)
         {
-            _context.Entry(reviewerToChange).CurrentValues.SetValues(Reviewer);
+            _context.Entry(reviewerToChange).CurrentValues.SetValues(reviewer);
             var success = _context.SaveChanges();
             return success;
         }
