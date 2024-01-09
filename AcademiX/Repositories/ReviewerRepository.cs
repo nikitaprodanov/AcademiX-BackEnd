@@ -32,10 +32,11 @@ namespace AcademiX.Repositories
                 .FirstOrDefault() ?? throw new EntityNotFoundException();
         }
 
-        public void CreateReviewer(Reviewer Reviewer)
+        public Reviewer CreateReviewer(Reviewer Reviewer)
         {
             _context.Reviewers.Add(Reviewer);
             _context.SaveChanges();
+            return Reviewer;
         }
 
         public int UpdateReviewer(Reviewer reviewerToChange, Reviewer reviewer)

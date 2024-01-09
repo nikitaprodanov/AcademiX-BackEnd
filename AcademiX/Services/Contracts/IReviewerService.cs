@@ -8,7 +8,7 @@ namespace AcademiX.Services.Contracts
 
         public Reviewer GetReviewerById(int id);
 
-        public void CreateReviewer(Reviewer reviewer);
+        public Reviewer CreateReviewer(Reviewer reviewer);
 
         public int UpdateReviewer( Reviewer reviewer);
 

@@ -33,7 +33,7 @@ namespace AcademiX.Services
             }
         }
 
-        public void CreateReviewer(Reviewer Reviewer)
+        public Reviewer CreateReviewer(Reviewer Reviewer)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace AcademiX.Services
 
                 Reviewer.Id = ++id;
 
-                _repository.CreateReviewer(Reviewer);
+               return _repository.CreateReviewer(Reviewer);
             }
             catch (Exception)
             {
