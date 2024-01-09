@@ -54,7 +54,7 @@ namespace AcademiX.Repositories
 
 		public ThesisSupervisor GetThesisSupervisorById(int id)
 		{
-			var thesisSupervisor = _context.ThesisSupervisors.Find(id);
+			var thesisSupervisor = _context.ThesisSupervisors.Include(ts => ts.User).Where(ts => ts.Id == id).First();
 
 			if (thesisSupervisor == null) throw new EntityNotFoundException();
 
