@@ -1,0 +1,30 @@
+﻿@model AssignReviewerViewModel
+
+<h2>Assign Reviewer</h2>
+
+@if (ViewData.ModelState.IsValid)
+{
+    <p>Reviewer assigned successfully!</p>
+}
+else
+{
+    <p>Failed to assign reviewer. Please check the errors below:</p>
+    <ul>
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <li>@error.ErrorMessage</li>
+        }
+    </ul>
+}
+
+<form asp-action="AssignReviewer" method="post">
+    <input type="hidden" asp-for="ThesisId" />
+
+    <label for="SelectedReviewerId">Select Reviewer:</label>
+    <select asp-for="SelectedReviewerId" asp-items="new SelectList(Model.AvailableReviewers)">
+    </select>
+
+    <button type="submit">Assign Reviewer</button>
+</form>
+
+<a asp-action="Index">Back to Theses</a>

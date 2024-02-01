@@ -4,7 +4,7 @@ using AcademiX.Models.DTO;
 using AcademiX.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNetCoreDemo.Controllers.Api
+namespace AcademiX.Controllers.API
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -23,7 +23,7 @@ namespace AspNetCoreDemo.Controllers.Api
         {
             var specialties = _reviewerService.GetAllReviewers();
 
-            return this.StatusCode(StatusCodes.Status200OK, specialties);
+            return StatusCode(StatusCodes.Status200OK, specialties);
         }
 
         [HttpGet("{id}")]
@@ -33,11 +33,11 @@ namespace AspNetCoreDemo.Controllers.Api
             {
                 var Reviewer = _reviewerService.GetReviewerById(id);
 
-                return this.StatusCode(StatusCodes.Status200OK, Reviewer);
+                return StatusCode(StatusCodes.Status200OK, Reviewer);
             }
             catch (EntityNotFoundException ex)
             {
-                return this.StatusCode(StatusCodes.Status404NotFound, ex.Message);
+                return StatusCode(StatusCodes.Status404NotFound, ex.Message);
             }
         }
 
@@ -49,12 +49,12 @@ namespace AspNetCoreDemo.Controllers.Api
                 Reviewer reviewer = Convert(reviewerDto);
                 _reviewerService.CreateReviewer(reviewer);
 
-                return this.StatusCode(StatusCodes.Status201Created, reviewer);
+                return StatusCode(StatusCodes.Status201Created, reviewer);
             }
 
             catch (DuplicateEntityException ex)
             {
-                return this.StatusCode(StatusCodes.Status409Conflict, ex.Message);
+                return StatusCode(StatusCodes.Status409Conflict, ex.Message);
             }
         }
 
@@ -77,12 +77,12 @@ namespace AspNetCoreDemo.Controllers.Api
             }
             catch (EntityNotFoundException ex)
             {
-                return this.StatusCode(StatusCodes.Status404NotFound, ex.Message);
+                return StatusCode(StatusCodes.Status404NotFound, ex.Message);
 
             }
             catch (DuplicateEntityException ex)
             {
-                return this.StatusCode(StatusCodes.Status409Conflict, ex.Message);
+                return StatusCode(StatusCodes.Status409Conflict, ex.Message);
             }
         }
 

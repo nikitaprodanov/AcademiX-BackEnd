@@ -25,7 +25,8 @@ namespace AcademiX.Controllers
 
         public ActionResult<Specialty> GetSpecialtyById(int id)
         {
-           var specialty = _specialtyService.GetSpecialtyById(id);
+            var specialty = _specialtyService.GetSpecialtyById(id);
+
             if(specialty == null)
             {
                 return BadRequest();

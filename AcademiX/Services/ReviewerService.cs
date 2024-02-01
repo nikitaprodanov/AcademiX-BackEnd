@@ -2,88 +2,47 @@
 using AcademiX.Models;
 using AcademiX.Repositories.Contracts;
 using AcademiX.Services.Contracts;
-using System;
 
 namespace AcademiX.Services
 {
     public class ReviewerService : IReviewerService
     {
-        private readonly IReviewerRepository _repository;
-        public ReviewerService(IReviewerRepository repository)
-        {
-            _repository = repository;
-        }
+        private readonly IReviewerRepository _reviewerRepository;
 
-        public IEnumerable<Reviewer> GetAllReviewers()
+        public ReviewerService(IReviewerRepository reviewerRepository)
         {
-            return _repository.GetAllReviewers();
+            _reviewerRepository = reviewerRepository;
         }
-
 
         public Reviewer GetReviewerById(int id)
         {
-            try
-            {
-                return _repository.GetReviewerById(id);
-            }
-            catch (EntityNotFoundException)
-            {
-                throw new EntityNotFoundException("Reviewer with this id was not found.");
+            return _reviewerRepository.GetReviewerById(id);
+		}
 
-            }
-        }
-
-        public Reviewer CreateReviewer(Reviewer Reviewer)
+        public IEnumerable<Reviewer> GetAllReviewers()
         {
-            try
-            {
-                var id = _repository.GetAllReviewers()
-                    .OrderByDescending(sp => sp.Id)
-                    .Select(sp => sp.Id)
-                    .FirstOrDefault();
+            return _reviewerRepository.GetAllReviewers();
+		}
 
-                Reviewer.Id = ++id;
-
-               return _repository.CreateReviewer(Reviewer);
-            }
-            catch (Exception)
-            {
-                throw new Exception();
-            }
-
-        }
-
-        public int UpdateReviewer(Reviewer Reviewer)
+        public void CreateReviewer(Reviewer reviewer)
         {
-            try
-            {
+            _reviewerRepository.CreateReviewer(reviewer);
+		}
 
-                var ReviewerToChange = _repository.GetReviewerById(Reviewer.Id);
-
-                return _repository.UpdateReviewer(ReviewerToChange, Reviewer);
-
-            }
-            catch (EntityNotFoundException)
-            {
-                throw new EntityNotFoundException("Reviewer with this id was not found.");
-
-            }
-        }
-
-        public int DeleteReviewer(int id)
+        public int UpdateReviewer(Reviewer reviewer)
         {
-            try
-            {
-                _repository.GetReviewerById(id);
-
-                return _repository.DeleteReviewer(id);
-            }
-
-            catch (EntityNotFoundException)
-            {
-                throw new EntityNotFoundException();
-            }
+            return _reviewerRepository.UpdateReviewer(reviewer);
         }
 
+        public int DeleteReviewer(int reviewerId)
+        {
+            return _reviewerRepository.DeleteReviewer(reviewerId);
+        }
+
+        int IReviewerService.GetDefaultReviewerId(IEnumerable<Reviewer> availableReviewers)
+        {
+            var defaultReviewer = availableReviewers.FirstOrDefault();
+            return defaultReviewer?.Id ?? 1;
+        }
     }
 }

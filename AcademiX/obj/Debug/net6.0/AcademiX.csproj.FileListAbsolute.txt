@@ -1,70 +1,46 @@
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\appsettings.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\AcademiX.staticwebassets.runtime.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\AcademiX.exe
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\AcademiX.deps.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\AcademiX.runtimeconfig.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\AcademiX.dll
-C:\Users\konst\source\repos\AcademiX\AcademiX\bin\Debug\net6.0\AcademiX.pdb
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.AssemblyInfoInputs.cache
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.AssemblyInfo.cs
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.csproj.CoreCompileInputs.cache
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.RazorAssemblyInfo.cache
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.RazorAssemblyInfo.cs
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.AcademiX.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.build.AcademiX.props
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AcademiX.props
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AcademiX.props
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\scopedcss\bundle\AcademiX.styles.css
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\scopedcss\projectbundle\AcademiX.bundle.scp.css
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.dll
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\refint\AcademiX.dll
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.pdb
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\AcademiX.genruntimeconfig.cache
-C:\Users\konst\source\repos\AcademiX\AcademiX\obj\Debug\net6.0\ref\AcademiX.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\appsettings.json
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.staticwebassets.runtime.json
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.exe
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.deps.json
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.runtimeconfig.json
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.pdb
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Humanizer.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\MySqlConnector.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.csproj.AssemblyReference.cache
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.AssemblyInfoInputs.cache
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.AssemblyInfo.cs
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.csproj.CoreCompileInputs.cache
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.RazorAssemblyInfo.cache
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.RazorAssemblyInfo.cs
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\scopedcss\bundle\AcademiX.styles.css
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\scopedcss\projectbundle\AcademiX.bundle.scp.css
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.csproj.CopyComplete
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\refint\AcademiX.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.pdb
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.genruntimeconfig.cache
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\ref\AcademiX.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\zhnin\Documents\GitHub\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\appsettings.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.staticwebassets.runtime.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.exe
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.deps.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.runtimeconfig.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\AcademiX.pdb
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.csproj.AssemblyReference.cache
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.AssemblyInfoInputs.cache
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.AssemblyInfo.cs
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.csproj.CoreCompileInputs.cache
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.RazorAssemblyInfo.cache
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.RazorAssemblyInfo.cs
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.AcademiX.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.build.AcademiX.props
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.AcademiX.props
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.AcademiX.props
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\scopedcss\bundle\AcademiX.styles.css
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\scopedcss\projectbundle\AcademiX.bundle.scp.css
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.csproj.CopyComplete
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\refint\AcademiX.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.pdb
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.genruntimeconfig.cache
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\ref\AcademiX.dll
+C:\Users\Teodora Derek\source\repos\C#Important\AcademiX-BackEnd\AcademiX\obj\Debug\net6.0\AcademiX.sourcelink.json

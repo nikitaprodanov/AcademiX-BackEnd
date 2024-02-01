@@ -12,12 +12,10 @@ namespace AcademiX.Models
         public int Cabinet { get; set; }
 
         [StringLength(7)]
-        public string WorkingTime { get; set; }
+        public string WorkingTime { get; set; } = null!;
 
         public int UserId { get; set; }
 
-        public User User { get; set; }
-
-
+        public User User { get; set; } = null!;
     }
 }

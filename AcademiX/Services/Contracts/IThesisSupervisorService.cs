@@ -4,8 +4,6 @@ namespace AcademiX.Services.Contracts
 {
 	public interface IThesisSupervisorService
 	{
-		// Create
-		public void CreateThesisSupervisor(ThesisSupervisor thesisSupervisor);
 
 		// GetAll
 		public IEnumerable<ThesisSupervisor> GetAllThesisSupervisors();
@@ -13,7 +11,8 @@ namespace AcademiX.Services.Contracts
 		// GetById
 		public ThesisSupervisor GetThesisSupervisorById(int id);
 
-		//public ThesisSupervisor GetThesisSupervisorByUsername(string username);
+		// Create
+		public void CreateThesisSupervisor(ThesisSupervisor thesisSupervisor);
 
 		// Update 
 		public int UpdateThesisSupervisor(ThesisSupervisor thesisSupervisor);

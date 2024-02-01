@@ -10,16 +10,16 @@ namespace AcademiX.Models
 		public int Id { get; set; }
 
 		[EmailAddress]
-		public string Email { get; set; }
-		public int Cabinet { get; set; }
-		public string WorkingTime { get; set; }
-		public bool IsReviewer { get; set; }
+		public string Email { get; set; } = null!;
+        public int Cabinet { get; set; }
+		public string WorkingTime { get; set; } = null!;
+        public bool IsReviewer { get; set; }
 
 		[Required]
 		public int UserId { get; set; }
 
-		public User User { get; set; }
+		public User User { get; set; } = null!;
 
-		public ICollection<Specialty> Specialties { get; set; }
-	}
+        public ICollection<Specialty> Specialties { get; set; } = null!;
+    }
 }

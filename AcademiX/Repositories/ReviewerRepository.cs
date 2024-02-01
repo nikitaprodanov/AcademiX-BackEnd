@@ -9,7 +9,6 @@ namespace AcademiX.Repositories
 {
     public class ReviewerRepository : IReviewerRepository
     {
-
         private readonly ApplicationDbContext _context;
 
         public ReviewerRepository(ApplicationDbContext context)
@@ -17,41 +16,41 @@ namespace AcademiX.Repositories
             _context = context;
         }
 
+        public Reviewer GetReviewerById(int reviewerId)
+        {
+            return _context.Reviewers.Find(reviewerId) ?? throw new Exception("No such reviewer exists!");
+        }
+
         public IEnumerable<Reviewer> GetAllReviewers()
         {
-            return _context.Reviewers
-                .Include(reviewer => reviewer.User)
-                .ToList();
+			return _context.Reviewers.ToList();
         }
 
-        public Reviewer GetReviewerById(int id)
+        public void CreateReviewer(Reviewer reviewer)
         {
-            return _context.Reviewers
-                .Include(reviewer => reviewer.User)
-                .Where(reviewer => reviewer.Id == id)
-                .FirstOrDefault() ?? throw new EntityNotFoundException();
-        }
-
-        public Reviewer CreateReviewer(Reviewer Reviewer)
-        {
-            _context.Reviewers.Add(Reviewer);
+			_context.Reviewers.Add(reviewer);
             _context.SaveChanges();
-            return Reviewer;
         }
 
-        public int UpdateReviewer(Reviewer reviewerToChange, Reviewer reviewer)
+        public int UpdateReviewer(Reviewer reviewer)
         {
-            _context.Entry(reviewerToChange).CurrentValues.SetValues(reviewer);
-            var success = _context.SaveChanges();
-            return success;
+            _context.Entry(reviewer).State = EntityState.Modified;
+            _context.SaveChanges();
+
+            return reviewer.UserId;
         }
 
-        public int DeleteReviewer(int id)
+        public int DeleteReviewer(int reviewerId)
         {
-            Reviewer ReviewerToDelete = this.GetReviewerById(id);
-            _context.Reviewers.Remove(ReviewerToDelete);
-            var success = _context.SaveChanges();
-            return success;
+            var reviewerToDelete = _context.Reviewers.Find(reviewerId);
+
+            if (reviewerToDelete != null)
+            {
+                _context.Reviewers.Remove(reviewerToDelete);
+                _context.SaveChanges();
+            }
+
+            return reviewerToDelete?.UserId ?? 0;
         }
     }
 }

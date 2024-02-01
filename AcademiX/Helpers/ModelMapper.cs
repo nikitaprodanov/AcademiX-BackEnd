@@ -14,7 +14,9 @@ namespace AcademiX.Helpers
 			return new User()
 			{
 				Username = viewModel.Username,
-				Password = viewModel.Password
+				Password = viewModel.Password,
+				FirstName = viewModel.FirstName,
+				LastName = viewModel.LastName,
 			};
 		}
 	}

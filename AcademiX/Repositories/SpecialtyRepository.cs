@@ -23,12 +23,14 @@ namespace AcademiX.Repositories
 
         public Specialty GetSpecialtyById(int id)
         {
-            return _context.Specialties.Find(id) ?? throw new EntityNotFoundException();
+            return _context.Specialties.Find(id) 
+                ?? throw new EntityNotFoundException();
         }
 
         public Specialty GetSpecialtyByName(string name)
         {
-            return _context.Specialties.ToList().Where(specialty => specialty.Name == name).FirstOrDefault();
+            return _context.Specialties.ToList().Where(specialty => specialty.Name == name).FirstOrDefault()
+                ?? throw new EntityNotFoundException();
         }
 
         public void CreateSpecialty(Specialty specialty)
